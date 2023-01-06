@@ -67,14 +67,14 @@ h1
 .rating
 {
   margin-left: 20px;
-  margin-right: 220px;
-  background-color:black;
+  margin-right: 250px;
+  background-color:white;
 }
 .features .fa 
 {
-  font-size: 15px;
+  font-size: 10px;
   color:rgb(255, 187, 0);
-  padding-left: 5pt
+  padding-left: 5px
 }
 .feature-details
 { 
@@ -108,7 +108,7 @@ h4
   transform: scale(1.1);
   z-index: 2;
 }
-.feature-details::before,.feature-details::after
+.feature-details::before
 {
   content: '';
   height: 5px;
@@ -119,11 +119,6 @@ h4
   animation: stroke 2s linear;
   animation-fill-mode: forwards;
 }
-.feature-details::after
-{
-   right: 95px;
-   bottom: -8px;
-}
 @keyframes stroke
 {
    0%{
@@ -132,11 +127,11 @@ h4
    }
    50%{
        height: 5px;
-       width: calc(285px + 5px);
+       width: calc(50% + 5px);
    }
    100%{
-       height:calc(60% + 5px);
-       width: calc(285px + 5px);
+       height:calc(100% + 5px);
+       width: calc(100% + 5px);
    }
 }
 /* .footer
